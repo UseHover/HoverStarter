@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HoverStarter</string>
+    <string name="permissions_button_label">request permissions</string>
+    <string name="action_button_label">run action</string>
+</resources>
