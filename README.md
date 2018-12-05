@@ -10,7 +10,7 @@ You can [sign up](https://www.usehover.com/signup/) for a Hover account for free
 ## How to use HoverStarter
 
 ### 1) Configure a simple action
-From your Hover dashboard, [configure a simple test action](https://www.usehover.com/docs/actions). Check balance or check own phone number often work well. Save your action and note the action ID for use in step 4.
+From your Hover dashboard, [configure a simple test action](https://www.usehover.com/docs/actions). Check balance or check own phone number often work well. Save your action and note the action ID for use in step 3.
 
 ### 2) Create a new Android Studio project.
 Clone this repository and import it into a new Android Studio project. In the app level build.gradle, change the `applicationId` from `com.usehover.hoverstarter` to a name of your choice, eg. `com.yourname.hoverstarter`.
