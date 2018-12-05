@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new HoverParameters.Builder(getApplicationContext())
-                        .request("YOUR_ACTION_ID") // <-- Add your action ID here
+                        .request("YOUR_ACTION_ID") // Add your action ID here
+//                        .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
                         .buildIntent();
                 startActivityForResult(i, 0);
             }
