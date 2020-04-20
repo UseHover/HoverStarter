@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.hover.sdk.actions.HoverAction;
 import com.hover.sdk.api.Hover;
 import com.hover.sdk.api.HoverParameters;
-import com.hover.sdk.permissions.PermissionActivity;
+import com.usehover.hoverstarter.permissions.PermissionActivity;
 
 import java.util.ArrayList;
 

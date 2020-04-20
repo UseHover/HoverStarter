@@ -18,6 +18,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".permissions.PermissionActivity"
+            android:label="@string/hsdk_perms_needed"
+            android:launchMode="singleTop"
+            android:theme="@style/HoverCustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.hover.sdk.RETURN_FROM_SETTINGS" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.hover.ApiKey"
             android:value="YOUR_API_KEY"/>
