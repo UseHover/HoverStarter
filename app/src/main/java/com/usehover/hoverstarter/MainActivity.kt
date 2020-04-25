@@ -16,8 +16,8 @@ import java.util.*
 class MainActivity : AppCompatActivity(), Hover.DownloadListener {
 
     private val TAG = "MainActivity"
-    lateinit var permissionButton: Button
-    lateinit var buttonAction: Button
+    private lateinit var permissionButton: Button
+    private lateinit var buttonAction: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), Hover.DownloadListener {
 
         Hover.initialize(applicationContext, this)
 
-        permissionButton = findViewById<Button>(R.id.permissions_button)
+        permissionButton = findViewById(R.id.permissions_button)
         permissionButton.setOnClickListener {
             val i = Intent(applicationContext, PermissionActivity::class.java)
             startActivityForResult(i, 0)
@@ -44,12 +44,12 @@ class MainActivity : AppCompatActivity(), Hover.DownloadListener {
     }
 
     override fun onError(message: String) {
-        Toast.makeText(this, "Error while attempting to download actions, see logcat for error", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Error while attempting to download actions, see logcat for error", Toast.LENGTH_LONG).show()
         Log.e(TAG, "Error: $message")
     }
 
     override fun onSuccess(actions: ArrayList<HoverAction>) {
-        Toast.makeText(this, "Successfully downloaded " + actions.size + " actions", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Successfully downloaded " + actions.size + " actions", Toast.LENGTH_LONG).show()
         Log.d(TAG, "Successfully downloaded " + actions.size + " actions")
     }
 }
