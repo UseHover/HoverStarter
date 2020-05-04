@@ -5,7 +5,7 @@ HoverStarter is a very simple Android app built with the Hover SDK. Use it as a 
  - A Hover account
  - Basic familiarity with GitHub and Android Studio
 
-You can [sign up](https://www.usehover.com/signup/) for a Hover account for free if you don't already have one.
+You can [sign up](https://www.usehover.com/u/sign_up) for a Hover account for free if you don't already have one.
 
 ## How to use HoverStarter
 
